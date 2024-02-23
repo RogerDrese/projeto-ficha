@@ -1,0 +1,31 @@
+@charset "UTF 8";
+
+* { 
+    font-family: fantasy;
+}
+body{
+    background-size: cover ;
+    background-attachment:fixed;
+}
+h1 {
+    text-align: center;
+}
+main{
+    position: relative;
+    height: 100% vh;
+}
+
+iframe#ficha {
+    background-color: goldenrod;
+    top: auto; 
+    left: 35px;
+    width: 1280px;
+    height: 1500px;
+    border-radius: 5%;
+    border: black;
+    box-shadow: black 10px 10px 15px;
+    position: relative;
+
+       
+    
+}

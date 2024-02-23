@@ -1,0 +1,9 @@
+@charset "UTF 8";
+
+
+
+iframe#ficha {
+    background-color: goldenrod;
+    border-radius: 100px 100px;
+    border-color: black;
+}
