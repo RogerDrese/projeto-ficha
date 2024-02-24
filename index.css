@@ -1,31 +1,47 @@
 @charset "UTF 8";
 
 * { 
+    margin: 0px;
+    padding: 0px;
     font-family: fantasy;
 }
-body{
-    background-size: cover ;
-    background-attachment:fixed;
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
 h1 {
     text-align: center;
 }
 main{
     position: relative;
-    height: 100% vh;
+    height: 100vh;
+}
+
+section#folha {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
 }
 
 iframe#ficha {
-    background-color: goldenrod;
-    top: auto; 
-    left: 35px;
-    width: 1280px;
-    height: 1500px;
-    border-radius: 5%;
-    border: black;
-    box-shadow: black 10px 10px 15px;
+    background-color:  #ac6b2a;
+    
     position: relative;
-
+    top: 150px;
+    right: 18px;
+    left: 18px;
+    width: 900px;
+    height: 800px;
        
     
 }

@@ -1,9 +1,8 @@
 @charset "UTF 8";
 
+body{
+    background: url(fundo-abstrato-com-desenho-de-papel-vintage_1048-14629.avif) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
 
-
-iframe#ficha {
-    background-color: goldenrod;
-    border-radius: 100px 100px;
-    border-color: black;
 }
