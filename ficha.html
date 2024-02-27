@@ -7,12 +7,10 @@
     <title>Ficha</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="off" >
-        
-        
-        
+    <h1>Ficha de K2lu 1920.</h1>
+    <form action="cadastro.php" method="get" autocomplete="off" >  
     </form>
-    <fieldset id="1920">
+    <fieldset id="infobasica">
         <legend>1920</legend>
         <p>
             <label for="inome">Nome do Investigador</label>
@@ -22,9 +20,9 @@
             <label for="iocup">Ocupação</label>
             <input type="text" name="ocup" id="iocup"  required >
         </p>
-        <p>
-            <label for="idip">Diplomas,Universidades</label>
-            <input type="text" name="dip" id="idip" autocomplete="off"  required >
+        <p id="pidip">
+            <label  for="idip">Diplomas,Universidades</label>
+            <textarea name="dip" id="idip" cols="24" rows="3" maxlength="78"></textarea>
         </p>
         <p>
             <label for="iln">Local de Nascimento</label>
@@ -38,10 +36,14 @@
             <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label>
             <input type="radio" name="sexo" id="isxfem" value="F" checked><label for="isxfem">Feminino</label>
         </p>
+        <p><label for="iaano">Qual ano da aventura?</label>
+            <input type="number" name="aano" id="iaano" min="0" max="2024" >
+        </p>
         <p>
             <label for="iano"> Em que ano você nasceu?
             </label>
-            <input type="number" name="ano" id="iano" min="1000" max="2024" oninput="calcIdade()">
+            <input type="number" name="ano" id="iano" min="0" max="2024" oninput="calcIdade()">
+            
         </p>
         <p>
             <label for="iidade">Sua idade é:</label>
@@ -50,12 +52,61 @@
        
     </fieldset>
     <fieldset id="carjo">
+        <legend>Características e Jogadas</legend>
+        <p>
+            <label for="ifor">FOR</label>
+            <input type="number" name="for" id="ifor"  autocomplete="off">
+
+            
+            <label for="ides">DES</label>
+            <input type="number" name="des" id="ides"  autocomplete="off">
+
+            <label for="iint">INT</label>
+            <input type="number" name="int" id="iint" autocomplete="off">
+            
+            <label for="ideia">IDÉIA</label>
+            <input type="number" name="ideia" id="ideia"  autocomplete="off">
+        </p>
+        <p>
+            <label for="icon">CON</label>
+            <input type="number" name="con" id="icon" autocomplete="off">
+
+            <label for="iapa">APA</label>
+            <input type="number" name="apa" id="iapa" autocomplete="off">
+
+            <label for="ipod">POD</label>
+            <input type="number" name="pod" id="ipod" autocomplete="off">
+           
+            <label for="isorte">SORTE</label>
+            <input type="number" name="sorte" id="isorte" autocomplete="off">
+        </p>
+
+        <p>
+            <label for="itam">TAM</label>
+            <input type="number" name="tam" id="itam" autocomplete="off">
+             
+            <label for="isan">SAN</label>
+            <input type="number" name="san" id="isan" autocomplete="off">
+            
+            <label for="iedu">EDU</label>
+            <input type="number" name="edu" id="iedu" autocomplete="off">
+
+            <label for="iconh">CONHE</label>
+            <input type="number" name="conh" id="iconh" autocomplete="off">
+        </p>
+
+        <p>
+            <label for="imict">99 - Mitos de cthulhu</label>
+            <input type="number" name="mict" id="imict" autocomplete="off">
+
+            <label for="ibdd">Bônus de Dano</label>
+            <input type="number" name="bdd" id="ibdd" autocomplete="off">
+        </p>
         
     </fieldset>
     <script>
-        function calcIdade() {
-            let atual = new Date().getFullYear()
-            iidade.innerHTML = Number(atual) - Number(iano.value)
+        function calcIdade() {           
+            iidade.innerHTML = Number(iaano.value) - Number(iano.value)
         }
     </script>
 </body>

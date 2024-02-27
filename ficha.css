@@ -1,8 +1,42 @@
 @charset "UTF 8";
 
-body{
-    background: url(fundo-abstrato-com-desenho-de-papel-vintage_1048-14629.avif) no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
-
+* {
+    margin: 0;
+    padding: 0;  
 }
+
+html, body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.738);
+}
+
+body{
+    background-image: url(fundo-abstrato-com-desenho-de-papel-vintage_1048-14629.avif);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+
+fieldset {
+    display: inline-block; /* Exibe os fieldsets em linha */
+    vertical-align: top; /* Alinha-os ao topo */
+}
+p#pidip {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+textarea#idip{
+    resize: none;
+}
+
+
+
+
+
+
